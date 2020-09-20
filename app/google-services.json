@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "64161482891",
+    "firebase_url": "https://dentist-dae07.firebaseio.com",
+    "project_id": "dentist-dae07",
+    "storage_bucket": "dentist-dae07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64161482891:android:537508761ec83885",
+        "android_client_info": {
+          "package_name": "com.teddybrothers.co_teddy.dentist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64161482891-1v4h4dacmm1ee9ra9lbntu3n40rhmmmj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teddybrothers.co_teddy.dentist",
+            "certificate_hash": "0126796d6bcce1d943bdfd48ea17f2012dab8a4f"
+          }
+        },
+        {
+          "client_id": "64161482891-q56l7r47ih9v2s12u2lo2ehdouiqu8bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBWHwaH0-4bVF9-FLLTRwC8c68VrpNWXc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64161482891-q56l7r47ih9v2s12u2lo2ehdouiqu8bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

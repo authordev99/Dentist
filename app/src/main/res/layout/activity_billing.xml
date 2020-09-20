@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="89dp"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+
+        <View
+            android:id="@+id/vAtas"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"></View>
+
+
+        <TextView
+            android:id="@+id/tvINV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="16dp"
+            android:text="INV - "
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/vAtas"
+            app:layout_constraintTop_toTopOf="@+id/vAtas" />
+
+
+        <TextView
+            android:id="@+id/tvNamaPasien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvInvoice"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:text="Patient Name"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvINV" />
+
+        <TextView
+            android:id="@+id/tvInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@+id/vAtas"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toRightOf="@+id/tvINV" />
+
+        <TextView
+            android:id="@+id/tvIDPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginTop="16dp"
+            android:text="PATIENT ID"
+
+
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/vAtas" />
+
+
+        <TextView
+            android:id="@+id/tvTotalHarga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamaPasien"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="58dp"
+            android:text="Rp. 0"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            app:layout_constraintLeft_toLeftOf="@+id/vAtas"
+            app:layout_constraintTop_toBottomOf="@+id/tvInvoice" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTotalHarga"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:text="BALANCE DUE"
+
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="@+id/vAtas"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalHarga" />
+
+
+        <TextView
+            android:id="@+id/tvJamInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="31dp"
+
+            android:layout_marginRight="31dp"
+            android:layout_marginTop="23dp"
+            android:text="19.50"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vAtas" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:text="Invoice Date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTanggalInvoice" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:text="Time Create"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvJamInvoice" />
+
+        <TextView
+            android:id="@+id/tvTanggalInvoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="23dp"
+
+            android:text="01 Januari 2017"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vAtas" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/vAtas"
+            android:background="@color/colorPrimary"
+            android:id="@+id/view6"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate"
+            app:layout_constraintLeft_toLeftOf="parent"></View>
+
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginTop="8dp"
+
+            android:text="Amount"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view6"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="8dp"
+
+            android:text="Item Details"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:text="Belum ada data Tindakan/Perawatan"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/recycleViewBilling"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="@+id/recycleViewBilling"
+            app:layout_constraintTop_toTopOf="@+id/recycleViewBilling"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/recycleViewBilling"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewBilling"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6"
+            app:layout_constraintHorizontal_bias="0.0">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+
+            android:layout_height="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycleViewBilling"
+            android:layout_marginTop="0dp"></View>
+
+
+        <TextView
+            android:id="@+id/tvSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tvAllTotal"
+            android:layout_toStartOf="@+id/tvAllTotal"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <TextView
+            android:id="@+id/tvAllTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="21dp"
+
+
+            android:text="Rp. 0"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/tvSubTotal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+
+        <TextView
+            android:id="@+id/tvDiskon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etDiskon"
+
+
+            android:text="Diskon"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="11dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubTotal"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/etDiskon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:gravity="right"
+            android:background="@drawable/borderedittext"
+            android:hint="Rp. 0"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvAllTotal"
+            app:layout_constraintLeft_toRightOf="@+id/tvDiskon"
+            android:layout_marginLeft="198dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.92" />
+
+
+        <TextView
+            android:id="@+id/tvPembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/spPembayaran"
+            android:layout_toStartOf="@+id/spPembayaran"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiskon" />
+
+        <Spinner
+            android:id="@+id/spPembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"
+            android:layout_marginTop="11dp"
+            app:layout_constraintTop_toBottomOf="@+id/etDiskon"
+            app:layout_constraintLeft_toRightOf="@+id/tvPembayaran"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.966"></Spinner>
+
+
+        <TextView
+            android:id="@+id/tvAllTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+
+
+            android:text="All Total"
+            android:textSize="15dp"
+
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPembayaran"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvAllTotalHarga1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="-6dp"
+
+            android:text="Rp. 0"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/tvAllTotalHarga"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spPembayaran" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

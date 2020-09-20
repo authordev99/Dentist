@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Block tanggal"
+        android:id="@+id/tv"
+        android:textColor="@color/colorBlack"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlack"
+        android:id="@+id/garis"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"></View>
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_marginTop="10dp"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/garis"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="left|center_vertical"
+        android:text="Pilih tanggal . . ."
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/etKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="start"
+        android:maxLines="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/btnDate"
+        android:background="@drawable/edittext_background"
+        android:hint="keterangan"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

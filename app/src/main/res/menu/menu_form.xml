@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity">
+    <item
+        android:id="@+id/done"
+        android:orderInCategory="100"
+        android:title="Done"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_done_white_48dp"/>
+
+    <item
+        android:id="@+id/update"
+        android:orderInCategory="100"
+        android:title="Update"
+        app:showAsAction="always"
+        android:visible="false"
+        android:icon="@drawable/reschedule"/>
+
+</menu>

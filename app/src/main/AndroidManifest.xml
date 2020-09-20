@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.teddybrothers.co_teddy.dentist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/dentis"
+        android:label="Dentis"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:label">
+
+        <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".RekamMedisActivity"
+            android:label="Rekam Medis"
+            android:parentActivityName=".DetailPasienActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DaftarPasienActivity"
+            android:label="Data Pasien"
+            android:parentActivityName=".PasienActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".InputJadwalActivity"
+            android:label="Pesan Jadwal"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DetailPasienActivity"
+            android:label="Detail Pasien"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.teddybrothers.co_teddy.dentist_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="List Jadwal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BillingActivity"
+            android:label="Invoice Details"
+            android:parentActivityName=".RekamMedisActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".InputDokterActivity"
+            android:label="Input Data Dokter"
+            android:parentActivityName=".DokterActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PerawatanLainActivity"
+            android:label="Perawatan Lain"
+            android:parentActivityName=".RekamMedisActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ZoomActivity"
+            android:label="Foto Perawatan"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBarZoom" />
+        <activity
+            android:name=".FormActivity"
+            android:label="Buat Formulir"
+            android:parentActivityName=".FormulirActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UbahPasswordActivity"
+            android:label="Ubah Password" />
+        <activity
+            android:name=".AboutDentalActivity"
+            android:label="Tentang Klinik"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PdfViewerActivity"
+            android:label="Rekam Medis"
+            android:parentActivityName=".FormulirActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Dentis"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterAdminActivity" />
+        <activity
+            android:name=".HistoryJadwal"
+            android:label="Riwayat Konsultasi"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_place_api" />
+
+        <activity
+            android:name=".InputAboutDental"
+            android:label="Input Data Klinik"
+            android:parentActivityName=".AboutDentalActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PasienActivity"
+            android:label="Data Pasien"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".DokterActivity"
+            android:label="Data Dokter"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TindakanActivity"
+            android:label="Data Tindakan"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AdminActivity"
+            android:label="Data Administrator"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".HistoryBillingActivity"
+            android:label="Data Billing"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".FormulirActivity"
+            android:label="Data Formulir"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.teddybrothers.co_teddy.dentist"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ListBlockDateActivity"
+            android:parentActivityName=".SettingActivity"
+            android:theme="@style/AppTheme"
+            android:label="Daftar Tanggal Block"/>
+        <activity
+            android:name=".SettingActivity"
+            android:label="Pengaturan"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".TimeSettingActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".SettingActivity"
+            android:label="Pengaturan Waktu"></activity>
+    </application>
+
+</manifest>

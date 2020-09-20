@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+       android:paddingBottom="8dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photoDokter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/profle" />
+
+        <TextView
+            android:id="@+id/tvNamaDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/photoDokter"
+            android:text="Nama Dokter"
+
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvNoSTR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaDokter"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/photoDokter"
+            android:text="NO STR"
+            android:textAllCaps="true"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tvStatusUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non Aktif"
+            android:textAllCaps="true"
+            android:textSize="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivMore"
+            android:layout_toStartOf="@+id/ivMore" />
+
+
+
+        <ImageView
+            android:id="@+id/ivMore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+
+            android:layout_marginTop="7dp"
+            android:alpha="0.5"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@drawable/ic_more_vert_black_24dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

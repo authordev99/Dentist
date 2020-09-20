@@ -1,0 +1,662 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    tools:context=".RekamMedis">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="FORMULIR PEMERIKSAAN ODONTOGRAM"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNAMALENGKAP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJudul"
+                    android:layout_marginTop="20dp"
+
+                    android:paddingLeft="15dp"
+                    android:text="NAMA" />
+
+                <TextView
+                    android:id="@+id/titik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJudul"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tvNAMALENGKAP"
+                    android:paddingLeft="15dp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tvNamaPasien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJudul"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/titik"
+                    android:paddingLeft="10dp"
+                    android:text="PATIENT NAME"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNIK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNAMALENGKAP"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="ID" />
+
+                <TextView
+                    android:id="@+id/titik2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNAMALENGKAP"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tvNAMALENGKAP"
+                    android:paddingLeft="15dp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tvNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNAMALENGKAP"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/titik2"
+                    android:paddingLeft="10dp"
+                    android:text="IDENTITY NUMBER"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tvJK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJudul"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/tvNamaPasien"
+
+                    android:text="SEX" />
+
+
+                <TextView
+                    android:id="@+id/titik3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJudul"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tvJK"
+                    android:paddingLeft="15dp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tvJenKel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJudul"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/titik3"
+                    android:paddingLeft="10dp"
+                    android:text="L / P"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTTL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJK"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tvNamaPasien"
+
+                    android:text="TTL" />
+
+                <TextView
+                    android:id="@+id/titik4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJK"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tvJK"
+                    android:paddingLeft="15dp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tvLahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvJenKel"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/titik4"
+                    android:paddingLeft="10dp"
+                    android:text="PLACE"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/etAnamnesis"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="start"
+                android:maxLines="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Anamnesis"
+                android:padding="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/etDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="start"
+                android:maxLines="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Diagnosis"
+                android:padding="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Rencana Perawatan"
+
+                android:textSize="12dp" />
+
+
+            <Button
+                android:id="@+id/btnDate"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center_vertical"
+                android:text="Pilih Tanggal Rencana Perawatan . . ."
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="22dp"
+                android:background="#595959"></View>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+
+
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etKeteranganRenPer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ket Rencana Perawatan"
+                    android:maxLines="2"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvOcclusi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Oklusi "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgOcclusi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cbNormalBite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="Normal Bite" />
+
+                    <RadioButton
+                        android:id="@+id/cbCroosBite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="Cross Bite"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/cbSteepBite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:text="Steep Bite"
+
+                        />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvTorusPalatinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Torus Palatinus"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgPalatinus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cbTidakAda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="Tidak Ada" />
+
+                    <RadioButton
+                        android:id="@+id/cbKecil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:checked="true"
+                        android:text="Kecil"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/cbSedang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:text="Sedang" />
+
+                    <RadioButton
+                        android:id="@+id/cbBesar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:text="Besar"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/cbMultiple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:text="Multiple"
+
+                        />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvTorusMandibularis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Torus Mandibularis "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgMandibularis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cbTidakAda1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="Tidak Ada" />
+
+                    <RadioButton
+                        android:id="@+id/cbSisiKiri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:checked="true"
+                        android:text="Sisi Kiri" />
+
+                    <RadioButton
+                        android:id="@+id/cbSisiKanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="Sisi Kanan" />
+
+                    <RadioButton
+                        android:id="@+id/cbKeduaSisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Kedua Sisi" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvPalatum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Palatum "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgPalatum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cbDalam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="Dalam" />
+
+                    <RadioButton
+                        android:id="@+id/cbSedang1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="33dp"
+                        android:checked="true"
+                        android:text="Sedang" />
+
+                    <RadioButton
+                        android:id="@+id/cbRendah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="17dp"
+                        android:text="Rendah" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvDiastema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Diastema "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgDiastema"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cbTidakAda2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="Tidak Ada" />
+
+                    <RadioButton
+                        android:id="@+id/cbAda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+
+                        android:text="Ada" />
+
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rlKetDiastema">
+
+                <TextView
+                    android:id="@+id/tvDiastema1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Ket Diastema "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/etKetDiastema"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_toRightOf="@id/tvDiastema1"
+                    android:hint="keterangan diastema"
+                    android:maxLines="2" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvGigiAnomali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Gigi Anomali "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgAnomali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cbTidakAda3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:checked="true"
+                        android:text="Tidak Ada" />
+
+                    <RadioButton
+                        android:id="@+id/cbAda2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="11dp"
+                        android:text="Ada" />
+
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvGigiAnomali1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Ket Gigi Anomali "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tvGigiAnomali"/>
+
+                <EditText
+                    android:id="@+id/etKetAnomali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tvGigiAnomali1"
+                    android:hint="keterangan gigi anomali"
+                    android:maxLines="2"
+                    android:layout_below="@+id/tvGigiAnomali"/>
+
+
+                <TextView
+                    android:id="@+id/tvLainnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etKetAnomali"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Lain-lain "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etLainnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etKetAnomali"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="dijelaskan gigi yang mana, dan bentuknya"
+                    android:maxLines="2" />
+
+
+                <Button
+                    android:id="@+id/btnSimpan"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etLainnya"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="SIMPAN"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btnLog"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etLainnya"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/btnSimpan"
+                    android:text="RIWAYAT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

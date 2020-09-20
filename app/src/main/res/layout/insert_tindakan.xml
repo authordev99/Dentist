@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Tindakan"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorPrimary">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etTindakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Tindakan"
+            android:maxLines="1"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorPrimary">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi"
+            android:maxLines="2"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorPrimary">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:inputType="number"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+</LinearLayout>

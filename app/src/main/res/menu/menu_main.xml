@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="@string/menu_search"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView"
+        appcompat:showAsAction="always|collapseActionView"
+        android:visible="false"/>
+    <item
+        android:id="@+id/today"
+        android:orderInCategory="100"
+        android:title="Today"
+        app:showAsAction="always"
+        android:icon="@drawable/today"/>
+
+
+    <item
+        android:id="@+id/sortir"
+        android:orderInCategory="100"
+        android:title="cari"
+        app:showAsAction="always"
+        android:icon="@drawable/atasbawah"
+        />
+
+
+</menu>

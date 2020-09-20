@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="black_alpha_40">#66000000</color>
+
+    <color name="bg_screen">#03A9F4</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#42A5F5</color>
+    <color name="dot_dark_screen2">#42A5F5</color>
+    <color name="dot_dark_screen3">#42A5F5</color>
+    <color name="dot_dark_screen4">#42A5F5</color>
+    <color name="dot_dark_screen5">#42A5F5</color>
+
+    <color name="terkonfirmasi">#ffeb3b</color>
+    <color name="belum_konfirmasi">#fd6e00</color>
+    <color name="selesai">#009688</color>
+    <color name="jadwalUlang">#ff5722</color>
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#64B5F6</color>
+    <color name="dot_light_screen2">#64B5F6</color>
+    <color name="dot_light_screen3">#64B5F6</color>
+    <color name="dot_light_screen4">#64B5F6</color>
+    <color name="dot_light_screen5">#64B5F6</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+
+    </array>
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/addphoto"
+                android:backgroundTint="@color/colorPrimary" />
+
+
+            <ImageView
+                android:id="@+id/ivFotoPerawatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/soudetail" />
+
+            <ImageView
+                android:id="@+id/ivLubang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/lubang"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivInsisal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/insisal"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivTambalBawah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsirbawah"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivTambalAtas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsiratas"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivTambalKiri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsirkiri"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivTambalKanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsirkanan"
+                android:visibility="invisible" />
+
+
+            <ImageView
+                android:id="@+id/ivTambalBawah2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsirbawah2detail"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivTambalAtas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsiratas2detail"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivTambalKiri2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsirkiri2detail"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivTambalKanan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arsirkanan2detail"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvTambalan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Tambalan"
+            android:textColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cbAtas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atas" />
+
+            <CheckBox
+                android:id="@+id/cbBawah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cbAtas"
+                android:layout_marginLeft="10dp"
+                android:text="Bawah" />
+
+            <CheckBox
+                android:id="@+id/cbTengah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cbBawah"
+                android:layout_marginLeft="10dp"
+                android:text="Tengah" />
+
+            <CheckBox
+                android:id="@+id/cbKiri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cbTengah"
+                android:layout_marginLeft="10dp"
+                android:text="Kiri" />
+            <CheckBox
+                android:id="@+id/cbKanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cbKiri"
+                android:layout_marginLeft="10dp"
+                android:text="Kanan" />
+        </RelativeLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etTindakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="Nama Tindakan" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColorHint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/acObatTindakan"
+                    android:layout_width="1207dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="text"
+                    android:hint="Obat/Tindakan" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:id="@+id/tvUpdate"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivAddTindakan"
+                android:layout_marginRight="10dp"
+
+                android:background="@drawable/addtindakan"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etKeterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:hint="Keterangan" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Media"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</ScrollView>

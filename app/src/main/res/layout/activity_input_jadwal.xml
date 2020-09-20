@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".InputJadwalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="647dp"
+
+        android:orientation="vertical"
+        >
+        <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ivPhotoUpload"
+            android:background="@drawable/image"
+            />
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--app:layout_anchor="@id/ivPhotoUpload"-->
+        <!--app:layout_anchorGravity="bottom|right|end"-->
+        <!--app:srcCompat="@drawable/addphoto"/>-->
+
+        <!--</android.support.design.widget.CoordinatorLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_event_black_24dp" />
+
+            <Button
+                android:id="@+id/btnDate"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="left|center_vertical"
+                android:text="Pilih tanggal . . ."
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="46dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_schedule_black_24dp" />
+
+            <Button
+                android:id="@+id/btnTime"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="left|center_vertical"
+                android:text="Pilih waktu ..."
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="46dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llPasien"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_people_outline_black_36dp" />
+
+            <Button
+                android:id="@+id/btnPasien"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="Pilih Pasien ..."
+                android:textAllCaps="false" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/viewPasien"
+            android:layout_marginLeft="46dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llDokter"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_people_black_36dp" />
+
+            <Button
+                android:id="@+id/btnDokter"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="left|center_vertical"
+                android:text="Pilih dokter ..."
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="46dp"
+            android:id="@+id/viewDokter"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/etKeluhan"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="start"
+            android:maxLines="5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Keluhan Pasien"
+            android:padding="10dp"
+            />
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/ic_menu_camera"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:id="@+id/ivCamera"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+        <!--<ImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_toRightOf="@id/ivCamera"-->
+        <!--android:background="@drawable/ic_menu_gallery"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:id="@+id/ivGallery"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity">
+    <item
+        android:id="@+id/edit"
+        android:orderInCategory="100"
+        android:title="Edit"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_mode_edit_white_36dp"/>
+
+</menu>

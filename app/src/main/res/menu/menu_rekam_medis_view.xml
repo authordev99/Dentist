@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title="Share Rekam Medis"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_share_white_36dp"/>
+    <item
+        android:id="@+id/cetak"
+        android:orderInCategory="100"
+        android:title="Cetak Rekam Medis"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_print_white_36dp"/>
+
+</menu>

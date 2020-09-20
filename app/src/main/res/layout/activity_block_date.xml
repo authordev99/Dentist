@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ListBlockDateActivity">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvStatus"
+                android:text="Data Tidak Tersedia"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true" />
+            <ListView
+                android:id="@+id/ListItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+        </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add_white_48dp" />
+</android.support.design.widget.CoordinatorLayout>

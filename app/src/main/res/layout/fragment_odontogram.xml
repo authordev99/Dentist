@@ -1,0 +1,625 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:id="@+id/flOdontogram"
+    tools:context=".Odontogram">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPerawatanLain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:text="Perawatan Lain"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="ODONTOGRAM"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="470dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="DIPERIKSA OLEH"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textStyle="bold"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:text="TANGGAL PEMERIKSAAN"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textStyle="bold"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:text="TANDA TANGAN PEMERIKSA"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textStyle="bold"-->
+
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rlodontogram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:id="@+id/linear0"
+            android:layout_width="595dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/pertama" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="550dp"
+            android:layout_height="63dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/gigi18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ondoo" />
+
+
+            <ImageButton
+                android:id="@+id/gigi17"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/ondoo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear9"
+            android:layout_width="340dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="225dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ketiga" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear19"
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="153dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mid" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/gigi85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="348dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/linear1"
+            android:layout_marginLeft="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kedua" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="100dp">
+
+
+            <ImageButton
+                android:id="@+id/gigi55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="550dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="240dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/gigi48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondooo" />
+
+            <ImageButton
+                android:id="@+id/gigi34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+
+            <ImageButton
+                android:id="@+id/gigi38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ondoo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear10"
+            android:layout_width="550dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="53dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="308dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/keempat" />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="235dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="340dp">
+
+            <ImageView
+                android:id="@+id/ivSignaturePad"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp" />
+
+            <ProgressBar
+                android:id="@+id/pbTtd"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true" />
+
+
+            <TextView
+                android:id="@+id/tvTanggalPemeriksaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="DD / MM / YY"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tvNamaDokter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="DRG. NAMA"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <!--<Button-->
+            <!--android:id="@+id/gigi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:clickable="true"-->
+            <!--android:text="TEST"-->
+            <!--android:background="@drawable/selected" />-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>
+

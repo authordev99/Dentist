@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Dentis</string>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="clear_pad">Clear</string>
+    <string name="save_signature">Save</string>
+    <string name="google_place_api">AIzaSyDxqXnTRsa6vGRj0x4jrFEu3kCzYIYKAug</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="search_result">Search Result!</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Dentis</string>
+    <string name="slide_1_desc">Your Dental Solution</string>
+
+    <string name="slide_2_title">Consultation Schedule</string>
+    <string name="slide_2_desc">Easy way to set schedule include detail complaint and photo</string>
+
+    <string name="slide_3_title">Medical Record</string>
+    <string name="slide_3_desc">Don\'t worry to lost medical record, is always up to date</string>
+
+    <string name="slide_4_title">Invoice</string>
+    <string name="slide_4_desc">Automatic calculation for each your treatment</string>
+
+    <string name="slide_5_title">Integrity Data</string>
+    <string name="slide_5_desc">Provide comfort to you about medical record and dental data</string>
+
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="search_hint_jadwal_pasien">ID, Nama Pasien</string>
+
+    <string name="menu_search">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tes">tes</string>
+    <string name="title_activity_daftar_tindakan">DaftarTindakan</string>
+
+
+    <!-- Order is important here: -->
+    <string name="date_setting">Tanggal Praktik</string>
+    <string name="time_setting">Waktu Praktik</string>
+
+    <string name="title_activity_daftar_dokter">DaftarDokterActivity</string>
+    <string name="title_activity_list_form">ListFormActivity</string>
+
+</resources>

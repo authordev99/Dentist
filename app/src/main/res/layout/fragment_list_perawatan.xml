@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Ada Riwayat Perawatan"
+                android:id="@+id/tvStatusData"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/tvRiwayaat"
+                android:text="Riwayat Perawatan"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="8dp"
+                android:paddingLeft="4dp"
+                android:paddingBottom="8dp"
+                android:layout_toRightOf="@id/tvRiwayaat"
+                android:id="@+id/tvNoGigi"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewPerawatan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvRiwayaat"
+                android:layout_marginTop="10dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true" />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:srcCompat="@drawable/ic_add_white_48dp" />
+            </android.support.design.widget.CoordinatorLayout>
+        </RelativeLayout>
+
+    </FrameLayout>

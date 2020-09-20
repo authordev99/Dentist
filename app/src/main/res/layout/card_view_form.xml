@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/photoPasien"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/form" />
+
+        <TextView
+            android:id="@+id/tvNamaPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/photoPasien"
+            android:text="Nama Pasien"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvTindakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaPasien"
+
+            android:layout_toRightOf="@+id/photoPasien"
+            android:text="tindakan"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tvTglForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:text=""
+            android:textSize="10dp"
+            android:layout_above="@+id/tvStatus"
+            android:layout_alignRight="@+id/tvStatus"
+            android:layout_alignEnd="@+id/tvStatus" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="8dp"
+            android:text="tindakan"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_below="@+id/tvNamaPasien"
+            android:layout_toLeftOf="@+id/ivMore"
+            android:layout_toStartOf="@+id/ivMore"
+            android:layout_marginEnd="10dp" />
+
+
+        <ImageView
+            android:id="@+id/ivMore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:alpha="0.5"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@drawable/ic_more_vert_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

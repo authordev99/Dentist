@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rencana Perawatan"
+        android:id="@+id/tv"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/garis"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum ada rencana perawatan"
+
+        android:textAlignment="center"
+        android:id="@+id/tvRencanaPerawatan"
+        android:capitalize="characters"
+        android:padding="35dp"
+        android:layout_below="@id/garis"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:id="@+id/etKeteranganRenPer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="start"
+        android:editable="false"
+        android:maxLines="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvRencanaPerawatan"
+        android:background="@drawable/edittext_background"
+        android:hint="Tidak ada keterangan rencana perawatan"
+        android:padding="10dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvHistoryRencanaPerawatan"
+        android:layout_below="@id/etKeteranganRenPer"></ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak Ada Riwayat Rencana Perawatan"
+        android:id="@+id/tvStatusData"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

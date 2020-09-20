@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AboutDentalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlNama"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Klinik"
+            android:id="@+id/tvNama1"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Praktek"
+            android:textStyle="italic"
+            android:id="@+id/tvNama"
+
+            android:layout_below="@+id/tvNama1"
+            android:textSize="15dp"
+           />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:padding="20dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/rlNama"
+        android:id="@+id/view1"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlJamPraktik"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jam Praktik"
+            android:id="@+id/jamPraktik"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvJamPraktik"
+            android:textStyle="italic|bold"
+            android:layout_below="@+id/jamPraktik"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:padding="20dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/rlTelp"
+        android:id="@+id/view6"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlAlamat"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:id="@+id/tvAlamat1"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Alamat tempat praktek"
+            android:id="@+id/tvAlamat"
+            android:layout_below="@+id/tvAlamat1"
+            android:textSize="15dp"
+            android:layout_toLeftOf="@+id/ivAlamat"
+            android:layout_toStartOf="@+id/ivAlamat" />
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_location_on_black_36dp"
+            android:id="@+id/ivAlamat"
+
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:padding="20dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/rlTelp"
+        android:id="@+id/view"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlTelp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. Telepon"
+
+            android:id="@+id/tvTelp1"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor telepon tempat praktek"
+            android:textStyle="italic"
+            android:id="@+id/tvTelp"
+            android:layout_below="@+id/tvTelp1"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_call_black_36dp"
+            android:id="@+id/ivTelp"
+           />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:padding="20dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/rlTelp"
+        android:id="@+id/view2"></View>
+
+    <RelativeLayout
+        android:id="@+id/rlTelpSeluler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvTelpSeluler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. Telepon Seluler"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvTelpSeluler2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTelpSeluler"
+            android:text="Nomor telepon seluler yang dapat dihubungi"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:layout_toLeftOf="@+id/ivWA"
+            android:layout_toStartOf="@+id/ivWA" />
+
+        <ImageView
+            android:id="@+id/ivTelpSeluler"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_call_black_36dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/ivSms"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ivTelpSeluler"
+            android:src="@drawable/ic_person_add_black_36dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/ivWA"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ivSms"
+            android:src="@drawable/whatsappslogo"
+
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:padding="20dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/rlTelp"
+        android:id="@+id/view3"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlEmail"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:id="@+id/tvEmail1"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email yang dapat dihubungi"
+            android:id="@+id/tvEmail"
+            android:textStyle="italic"
+            android:layout_below="@+id/tvEmail1"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_email_black_36dp"
+            android:id="@+id/ivEmail"
+
+            />
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:padding="20dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/rlEmail"
+        android:id="@+id/view5"></View>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlAppVersion"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Version"
+            android:id="@+id/appVersion"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvAppVersion"
+            android:textStyle="italic|bold"
+            android:layout_below="@+id/appVersion"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:padding="20dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/rlTelp"
+        android:id="@+id/view4"></View>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

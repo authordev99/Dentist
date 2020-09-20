@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    tools:context=".FormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgPilihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPersetujuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="Persetujuan" />
+
+                <RadioButton
+                    android:id="@+id/rbPenolakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Penolakan" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlDokter">
+
+                <TextView
+                    android:id="@+id/Dokter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Dokter" />
+
+                <TextView
+                    android:id="@+id/titik0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text=":" />
+
+                <Button
+                    android:id="@+id/btnDokter"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/titik0"
+                    android:gravity="left"
+                    android:text="Pilih Dokter ..."
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rgPilihan"
+                android:text="Yang bertandatangan di bawah ini, saya," />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nama" />
+
+                <TextView
+                    android:id="@+id/titik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text=":" />
+
+                <Button
+                    android:id="@+id/btnPasien"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/titik"
+                    android:gravity="left"
+                    android:text="Pilih Pasien ..."
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Umur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Umur" />
+
+                <TextView
+                    android:id="@+id/titik1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+
+                    android:text=":" />
+
+
+                <TextView
+                    android:id="@+id/tvUmur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/titik1"
+                    android:text="Tahun" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Alamat" />
+
+                <TextView
+                    android:id="@+id/titik2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tvAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/titik2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/titik2"
+                    android:layout_toRightOf="@+id/titik2"
+                    android:hint="Address"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/jenkel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Jenis Kelamin" />
+
+                <TextView
+                    android:id="@+id/titik3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:text=":" />
+
+
+                <TextView
+                    android:id="@+id/tvJenKel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/titik3"
+                    android:layout_toRightOf="@+id/titik3"
+                    android:gravity="center_vertical"
+                    android:hint="Jenis Kelamin"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/persetujuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="dengan ini menyatakan " />
+
+                <TextView
+                    android:id="@+id/tvPilihan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/persetujuan"
+                    android:text="PERSETUJUAN"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvpersetujuan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tvPilihan"
+                    android:text=" untuk dilakukannya" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tindakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Tindakan" />
+
+                <TextView
+                    android:id="@+id/titik4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:text=":" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/acTindakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/titik4"
+                    android:hint="Tindakan"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/terhadap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="terhadap" />
+
+                <TextView
+                    android:id="@+id/titik5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:text=":" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spTerhadap"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/titik5"></android.support.v7.widget.AppCompatSpinner>
+
+                <EditText
+                    android:id="@+id/etLainnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/spTerhadap"
+                    android:hint="mis : keluarga, adik, dsb"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Nama1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    android:text="Nama"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/titikk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/Nama1"
+                    android:text=":"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etNama2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/titikk"
+                    android:hint="Your Name"
+                    android:inputType="textPersonName|textCapWords"
+
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Umur1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Umur"
+
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/titik11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/Umur1"
+                    android:text=":"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etUmur2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@+id/titik11"
+                    android:hint="0"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/etUmur2"
+                    android:id="@+id/tvTahun"
+                    android:text="Tahun"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/alamat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Alamat"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/titik21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/alamat1"
+                    android:text=":"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etAlamat2"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/titik21"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/jenkel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Jenis Kelamin"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/titik31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/jenkel1"
+                    android:text=":"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spJenKel2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:layout_toRightOf="@+id/titik31"
+                    android:visibility="gone"></android.support.v7.widget.AppCompatSpinner>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jenkel1"
+                android:layout_marginTop="10dp"
+                android:text="Saya memahami perlunya dan manfaat tindakan tersebut sebagaimana telah dijelaskan seperti diatas kepada saya, termasuk risiko dan komplikasi yang mungkin timbul."
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:text="Saya juga menyadari bahwa oleh karena ilmu kedokteran bukanlah ilmu pasti, maka keberhasilan tindakan kedokteran bukanlah keniscayaan, melainkan sangat bergantung kepada izin Tuhan Yang Maha Esa."
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Palembang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Palembang,"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/Palembang"
+                    android:text="01 Jan 2017 "
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_height="280dp">
+
+                    <TextView
+                        android:id="@+id/tvPasien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Pasien yang Bersangkutan" />
+
+                    <com.github.gcacace.signaturepad.views.SignaturePad
+                        android:id="@+id/signature_pad_pasien"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_signature_pad_pasien"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/buttons_container_pasien"
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/clear_button_pasien"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:text="@string/clear_pad" />
+
+                        <Button
+                            android:id="@+id/btnEditTtd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Edit" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvNamaPasien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/signature_pad_pasien"
+                        android:layout_centerHorizontal="true"
+                        android:text="NAMA PASIEN"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/border"
+                    android:layout_alignParentRight="true">
+
+                    <ProgressBar
+                        android:id="@+id/pbTtdDokter"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/signature_pad"
+                        android:layout_width="fill_parent"
+                        android:layout_height="260dp" />
+
+                    <TextView
+                        android:id="@+id/tvNamaDokter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DRG. NAMA"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/signature_pad"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
